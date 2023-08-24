@@ -35,32 +35,32 @@ const peopleTeam = [
     {
         name: "Wayne Barnett",
         profession: "Founder CEO",
-        foto: "wayne-barnett-founder-ceo.jpg",
+        photo: "wayne-barnett-founder-ceo.jpg",
     },
     {
         name: "Angela Caroll",
         profession: "Chief Editor",
-        foto: "angela-caroll-chief-editor.jpg",
+        photo: "angela-caroll-chief-editor.jpg",
     },
     {
         name: "Walter Gordon",
         profession: "Office Manager",
-        foto: "walter-gordon-office-manager.jpg",
+        photo: "walter-gordon-office-manager.jpg",
     },
     {
         name: "Angela Lopez",
         profession: "Social Media Manager",
-        foto: "angela-lopez-social-media-manager.jpg",
+        photo: "angela-lopez-social-media-manager.jpg",
     },
     {
         name: "Scott Estrada",
         profession: "Developer",
-        foto: "scott-estrada-developer.jpg",
+        photo: "scott-estrada-developer.jpg",
     },
     {
         name: "Barbara Ramos",
         profession: "Graphic Designer",
-        foto: "barbara-ramos-graphic-designer.jpg",
+        photo: "barbara-ramos-graphic-designer.jpg",
     }
 ];
 
@@ -68,11 +68,13 @@ const peopleTeam = [
 
 
 //MILESTONE 1:
- //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+//Per stampare le informazioni di ogni persona bisogna usare un ciclo per iterare attraverso l'array.
+// uso of per l'array
+for (const person of peopleTeam) {
+    //per potergli stampare si deve usare template literal,usare la variabile "person"(che ha ruolo di una index),punto "proprieta"
+    console.log(`Name :${person.name}`);
+    console.log(`Profession :${person.profession}`);
+    console.log(`Photo :${person.photo}`);
+}
 
 
-
-// !!
-// TODO 
-// !!!  ERRGRGR
-// !! RGRGRGRG
