@@ -17,16 +17,7 @@ Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
 Buon lavoro!
-
 */
-// DICHIARAZIONI GLOBALI
-//const days = document.getElementById('days');
-//const hours = document.getElementById('hours');
-//const minutes = document.getElementById('minutes');
-//const seconds = document.getElementById('seconds');
-
-
-
 //MILESTONE 0:
 // !!! Creare un array di oggetti :
 
@@ -75,6 +66,20 @@ for (const person of peopleTeam) {
     console.log(`Name :${person.name}`);
     console.log(`Profession :${person.profession}`);
     console.log(`Photo :${person.photo}`);
+}
+
+//MILESTONE 2:
+//Stampare le stesse informazioni su DOM sottoforma di stringhe
+// 1.inserirle in HTML 
+// 2.portarle in JS file usando una variabile
+const container = document.getElementById('container');
+//usare un for per iterare attraverso l'array
+for (const person of peopleTeam) {
+    //3.usare innerHtml per mostrare nel DOM
+    container.innerHTML += 'Name :' + person.name + '<br/>';
+    container.innerHTML += 'Profession :' + person.profession + '<br/>';
+    container.innerHTML += 'Photo :' + person.photo + '<br/>';
+
 }
 
 
